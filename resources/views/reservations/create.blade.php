@@ -12,7 +12,7 @@
         <div class="mb-3">
             <label for="vol_id" class="form-label">Vol</label>
             <select id="vol_id" name="vol_id" class="form-select" required>
-                <option value="" disabled selected>-- Sélectionner un Vol pour tmchi t9wd --</option>
+                <option value="" disabled selected>-- Sélectionner un Vol--</option>
                 @foreach ($vols as $vol)
                 <option value="{{ $vol->id }}">{{ $vol->ville_depart }} → {{ $vol->ville_arrivee }} ({{ $vol->date }})</option>
                 @endforeach
@@ -22,7 +22,7 @@
         <div class="mb-3">
             <label for="passager_id" class="form-label">Passager</label>
             <select id="passager_id" name="passager_id" class="form-select" required>
-                <option value="" disabled selected>-- Sélectionner un Passager li ghaymchi it9wd --</option>
+                <option value="" disabled selected>-- Sélectionner un Passager--</option>
                 @foreach ($passagers as $passager)
                 <option value="{{ $passager->id }}">{{ $passager->nom }} {{ $passager->prenom }}</option>
                 @endforeach
@@ -30,11 +30,11 @@
         </div>
 
         <div class="mb-3">
-            <label for="num_siege" class="form-label">Numéro de Siège tgls 3lih</label>
+            <label for="num_siege" class="form-label">Numéro de Siège </label>
             <input type="text" id="num_siege" name="num_siege" class="form-control" value="{{ old('num_siege') }}" required>
         </div>
 
-        <button type="submit" class="btn btn-success">Ajouter un 9owad</button>
+        <button type="submit" class="btn btn-success">Ajouter</button>
         <a href="{{ route('reservations.index') }}" class="btn btn-secondary">Annuler</a>
     </form>
 </div>
